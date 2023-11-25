@@ -13,7 +13,7 @@ export const dataSourceOptions: DataSourceOptions = {
     synchronize: false,
     ssl: false,
     entities: ['./dist/database/entities/*{.ts,.js}'],
-    migrations: ['./src/database/migrations/*.ts'],
+    migrations: ['./dist/database/migrations/*.{ts,js}'],
     extra: {
         ssl: {
             rejectUnauthorized: false,

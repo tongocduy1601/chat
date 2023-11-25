@@ -1,4 +1,5 @@
 import { Injectable } from '@nestjs/common';
+import { UserEntity } from 'src/database/entities/user.entity';
 
 export type User = any;
 
@@ -20,4 +21,8 @@ export class UsersService {
     async findOne(username: string): Promise<User | undefined> {
         return this.users.find((user) => user.username === username);
     }
+
+    // async createUser(): Promise<UserEntity> {
+
+    // }
 }

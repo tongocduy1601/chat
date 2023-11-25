@@ -7,6 +7,10 @@ import { MessageEntity } from './message.entity';
 @Entity()
 export class UserEntity extends BaseEntity {
     @Column()
+    username: string;
+    @Column({
+        nullable: true,
+    })
     firstName: string;
 
     @Column({

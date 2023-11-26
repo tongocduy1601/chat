@@ -3,7 +3,7 @@ import { BaseEntity } from './base.entity';
 import { UserEntity } from './user.entity';
 import { MessageEntity } from './message.entity';
 
-@Entity()
+@Entity('conversation')
 export class ConversationEntity extends BaseEntity {
     @ManyToOne(() => UserEntity, (user) => user.conversations)
     @JoinColumn()

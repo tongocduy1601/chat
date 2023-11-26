@@ -4,7 +4,7 @@ import { BaseEntity } from './base.entity';
 import { ConversationEntity } from './conversation.entity';
 import { MessageEntity } from './message.entity';
 
-@Entity()
+@Entity('user')
 export class UserEntity extends BaseEntity {
     @Column()
     username: string;
